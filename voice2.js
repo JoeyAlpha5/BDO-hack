@@ -1,6 +1,6 @@
 function presentOptions(){
-    start();
-    responsiveVoice.speak("Welcome, please provide your banking bot i,d");
+    // start();
+    responsiveVoice.speak("Welcome, please provide your banking bot I.D");
 }
 
 //
@@ -19,12 +19,16 @@ recognition.onresult = function(event) {
     var last = event.results.length - 1;
     var command = event.results[last][0].transcript;
     // message.textContent = 'Voice Input: ' + command + '.';
-    if(command.toLowerCase() === '50'){
+    if(command.toLowerCase() === 'banking bot'){
         // alert("hello underdogs");
         responsiveVoice.speak("Processing");
+        document.getElementById("spinner").style.display = 'block';
+        setTimeout(()=>{
+            document.location= "home.html";
+        },2000);
     }
     else{
-        responsiveVoice.speak("The command you've supplied is unknown. Please try again");
+        responsiveVoice.speak("Invalid Banking Bot I.D, Please try again");
     }  
 };
 

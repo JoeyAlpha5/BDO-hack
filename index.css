@@ -52,6 +52,12 @@ span{
     color: #D9167F;
 }
 
+
+#confirmDeposit{
+    color: #D9167F;
+    display: none;
+}
+
 .col-sm-8{
     text-align: -webkit-center;
     color: white;
@@ -68,6 +74,18 @@ p.listening {
 
 #withdrawalAmmounts{
     display: none;
+}
+
+#prepaidOpt{
+    color: black;
+    display: none;
+}
+
+#prepaidOpt h1{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: lighter;
+    color: white;
 }
 
 h1#widthdrawOpt {
@@ -88,6 +106,10 @@ i.fas.fa-microphone {
     text-align: -webkit-center;
     color: white;
     padding-top: 15% !important;
+}
+
+#spinner{
+    display: none;
 }
 
 @media (max-width: 800px){

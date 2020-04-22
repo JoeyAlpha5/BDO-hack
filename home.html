@@ -19,7 +19,7 @@
 
     <div class="container">
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#"><i class="fas fa-chevron-left"></i> "Cancel" to go back</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-chevron-left"></i> "Exit" to go back</a>
         </nav>
         <div class="row">
           <div class="col-sm-4">   
@@ -34,6 +34,13 @@
             <p>Please select an option provided in the options menu</p>
             <i class="fas fa-microphone" onclick="start()"></i>
             <p class="listening">Listening..</p>
+            <div class="spinner-border" id="spinner" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+
+            <div id="confirmDeposit">
+              <h1 id="widthdrawOpt">"Confirm Deposit" when completed</h1>
+            </div>
 
             <div id="withdrawalAmmounts">
                 <h1 id="widthdrawOpt">Please select an amount you'd like to withdraw.</h1>
@@ -44,17 +51,46 @@
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                     <label class="form-check-label" for="defaultCheck2">
                       R100
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-                    <label class="form-check-label" for="defaultCheck2">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
                       R200
                     </label>
                   </div>
+            </div>
+
+
+            <div class="container" id="prepaidOpt">
+              <h1>Available prepaid options</h1><br/>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+                    <br/>
+                    <i class="fas fa-phone-volume" style="font-size: 30px;color: black;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Airtime</h5>
+                      <p class="card-text">"Buy prepaid airtime"</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card" style="width: 18rem;">
+                    <br/>
+                    <i class="fas fa-power-off" style="font-size: 30px;color: black;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Electricity</h5>
+                      <p class="card-text">"Buy prepaid electricity"</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
